@@ -1,4 +1,4 @@
-## Cara Penggunaan Sprint 2
+## Cara Penggunaan
 
 1. <b>First Step jika belum instal di local Server </b>
 
