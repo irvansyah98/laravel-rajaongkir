@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 // Route::middleware('auth:api')->get('/user', function (Request $request) {
 //     return $request->user();
 // });
-
+Route::post('login', 'App\Http\Controllers\ApiController@login');
 Route::get('search/provinces', 'App\Http\Controllers\ApiController@provinceSearch');
-Route::get('search/cities', 'App\Http\Controllers\ApiController@citySearch');
+Route::group(["middleware" => ["jwt.verify"]], function () {
+    Route::get('search/cities', 'App\Http\Controllers\ApiController@citySearch');
+});
