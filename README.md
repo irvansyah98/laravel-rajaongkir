@@ -15,6 +15,7 @@
 
 3. <b>Testing hasil Test</b>
 
-- melakukan fetching API data provinsi & kota dengan command ``php artisan add:provincecity``
 - Dokumentasi Postman <https://documenter.getpostman.com/view/2089481/2s8YYEPQmV>
-
+- melakukan fetching API data provinsi & kota dengan command ``php artisan add:provincecity``
+- run project dengan ``php artisan serve``
+- kemudian testing API sesuai dokumentasi postman yang sudah diberikan
